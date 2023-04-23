@@ -32,8 +32,6 @@ factory       = None
 stemmer       = None
 vocab         = None
 
-run_with_ngrok(app)
-
 # =[Routing]=====================================
 
 # [Routing untuk Halaman Utama atau Home]	
@@ -91,6 +89,7 @@ if __name__ == '__main__':
 	model = load('model_spam_tfidf_nb.model')
 
 	# Run Flask di localhost 
+	run_with_ngrok(app)
 	app.run()
 	
 	
